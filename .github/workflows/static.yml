@@ -1,43 +1,264 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Amir
+        <span>Khan</span></a>
+           
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+         </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, Its <span>Amir</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>
+                
+Hi, I'm Amir, a passionate web developer with a knack for crafting sleek, functional, and user-friendly websites. I specialize in front-end and back-end development, leveraging technologies like HTML, CSS, JavaScript, and modern frameworks.With a strong focus on responsive design, I ensure websites look great across all devices. I'm always eager to learn new technologies and stay updated with the latest web development trends.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+            <div class="home-img">
+                <img src="amir.png" alt="">
+            </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020
+                    </div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p> I successfully completed my high school education in 2020, building a strong foundation in core subjects and developing a passion for technology and problem-solving.
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+                        </p>
+                    </div>
+                
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022
+                    </div>
+                    <div class="timeline-content">
+                        <h3>College Level</h3>
+                        <p>
+                           
+In 2022, I completed my college-level education, where I focused on advanced concepts, particularly in computer science and programming, which prepared me for higher studies.
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+                        </p>
+                    </div>
+               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026
+                    </div>
+                    <div class="timeline-content">
+                        <h3>University</h3>
+                        <p>
+                            
+By 2026, I graduated from university with a degree in BS Computer Science. During this time, I honed my technical skills, worked on several projects, and gained in-depth knowledge of software development.
+
+
+                        </p>
+                    </div>
+                
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2027
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Internship</h3>
+                        <p>
+                            
+In 2027, I completed an internship at MT SOft, where I applied my academic learning to real-world challenges, gaining hands-on experience in development and further refining my professional skills. 
+                        </p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>UI Design</h4>
+                        <p>
+                            Hi, I'm Amir, a passionate web developer with a knack for crafting sleek, functional, and user-friendly websites. I specialize in front-end and back-end development, leveraging technologies like HTML, CSS, JavaScript, and modern frameworks.With a strong focus on responsive design.
+                        </p>
+                  
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Frontend Development</h4>
+                        <p>
+                            Hi, I'm Amir, a passionate web developer with a knack for crafting sleek, functional, and user-friendly websites. I specialize in front-end and back-end development, leveraging technologies like HTML, CSS, JavaScript, and modern frameworks.With a strong focus on responsive design.
+                        </p>
+                  
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                        <p>
+                            Hi, I'm Amir, a passionate web developer with a knack for crafting sleek, functional, and user-friendly websites. I specialize in front-end and back-end development, leveraging technologies like HTML, CSS, JavaScript, and modern frameworks.With a strong focus on responsive design.
+                        </p>
+                  
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Testing</h4>
+                        <p>
+                            Hi, I'm Amir, a passionate web developer with a knack for crafting sleek, functional, and user-friendly websites. I specialize in front-end and back-end development, leveraging technologies like HTML, CSS, JavaScript, and modern frameworks.With a strong focus on responsive design.
+                        </p>
+                  
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+<div class="testimonials-box">
+    <h2 class="heading">Testimonials</h2>
+    <div class="wrapper">
+        <div class="testimonial-item">
+            <img src="Screenshot_20240317-192551_1.png" alt="">
+            <h2 >Sabir Khan</h2>
+            <div class="rating">
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+
+            </div>
+            <p>
+                "Working with Amir was a game-changer! He delivered a clean, efficient, and highly functional website ahead of schedule. I couldn’t be happier with the results."  
+            </p>
+        </div>
+        <div class="testimonial-item">
+            <img src="facebook_1734372784421_7274486707190340111.jpg" alt="">
+            <h2 >Muhammad Abdullah</h2>
+            <div class="rating">
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+            </div>
+            <p>
+                "Amir is a skilled developer who truly understands client needs. He created a seamless, user-friendly platform that exceeded my expectations." 
+            </p>
+        </div>
+        <div class="testimonial-item">
+            <img src="IMG-20241216-WA0018.jpg" alt="">
+            <h2 >Muhammad Zeeshan</h2>
+            <div class="rating">
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+                <i class='bx bxs-star' 
+                id="star"></i>
+            </div>
+            <p>
+                "Professional, reliable, and talented — Amir turned my vision into reality with exceptional coding and design skills. Highly recommended!"
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email"
+                    placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number"
+                    placeholder="Phone Number">
+                    <input type="text"
+                    placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30"
+                rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+<ul class="list">
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Testimonials</a></li>
+    
+</ul>
+<p class="copyright">
+    © Amir Khan | All Rights Reserved
+</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
