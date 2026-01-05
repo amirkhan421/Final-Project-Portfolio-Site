@@ -37,7 +37,7 @@ Academic-Project-Portfolio-Site/
 
 ## 🌐 Live Demo
 GitHub Pages Link:  
-👉 [https://amirkhan421.github.io/Final-Project-Portfolio-Site/](https://amirkhan421.github.io/Final-Project-Portfolio-Site/)
+👉 https://amirkhan421.github.io/Final-Project-Portfolio-Site/
 
 ---
 
