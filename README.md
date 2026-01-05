@@ -23,7 +23,6 @@ This portfolio website is designed to:
 
 ## 📂 Project Structure
 
----
 Academic-Project-Portfolio-Site/
 │
 ├── index.html
@@ -31,8 +30,10 @@ Academic-Project-Portfolio-Site/
 ├── script.js
 ├── images/
 │ ├── amir.png
-│ ├── project screenshots
-│
+│ ├── facebook_1734372784421_7274486707190340111.jpg
+│ ├── IMG-20241216-WA0018.jpg
+│ ├── Screenshot_20240317-192551_1.png
+│ └── Screenshot_20240815-093754_1-removebg-preview.png
 └── README.md
 
 ## 🌐 Live Demo
